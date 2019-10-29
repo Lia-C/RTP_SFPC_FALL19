@@ -23,11 +23,10 @@ class ofApp : public ofBaseApp{
     
         ofTrueTypeFont font;
         vector < string > chars;
-        vector < string > char_freq;
+        vector < int > char_freq;
+        vector < float > char_time_left;
     
-        int x_place;
-        int y_place;
+    int max_char_freq;
         
-    
 		
 };

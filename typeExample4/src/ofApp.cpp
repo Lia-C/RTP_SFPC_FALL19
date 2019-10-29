@@ -22,12 +22,15 @@ void ofApp::draw(){
     
     for (int i = 0; i < paths.size(); i++){
         
+        //one path = one letter (i think)
         vector < ofPolyline > lines = paths[i].getOutline();
         
         for (int j = 0; j < lines.size(); j++){
             
+            //temp is a vector<ofPoint> = ofPolyline
             ofPolyline temp = lines[j].getResampledBySpacing(4);
             for (int k = 0; k < temp.size(); k++){
+                //for each point, shift right by: 50sin (y coord * time)
                 temp[k].x += 50 * sin(temp[k].y*0.04 + ofGetElapsedTimef());
             }
             //temp = temp.getSmoothed(MAX(mouseX, 1));

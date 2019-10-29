@@ -14,7 +14,7 @@ void ofApp::update(){
 
 void ofApp::draw(){
 
-    ofBackground(255);//20);
+    ofBackground(20);//20);
     ofNoFill();
     
     int side_len = ofGetWidth();
@@ -30,7 +30,7 @@ void ofApp::draw(){
         ofPolyline line;
         for(int x = start_x; x < end_x; x++){
             
-            int movement = 500+ ((ofGetFrameNum()/2)  % 700);
+            int movement = 500+ ((ofGetFrameNum()/2) x);
             
             // y_base: independent of l
             float scale = 400;
