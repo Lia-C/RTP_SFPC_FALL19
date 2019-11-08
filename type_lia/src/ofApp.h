@@ -27,6 +27,7 @@ class ofApp : public ofBaseApp{
         vector < float > char_time_left;
     
     int max_char_freq;
+    int time_scale;
         
 		
 };
